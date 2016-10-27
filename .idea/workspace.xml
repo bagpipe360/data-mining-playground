@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f410a8a3-e174-4d3f-8e72-92e3d666b4ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/settings.py" afterPath="$PROJECT_DIR$/data_mining_playground/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/css/base.css" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/css/changelists.css" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/css/changelists.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/SelectBox.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/SelectBox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/SelectFilter2.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/SelectFilter2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/actions.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/actions.min.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/actions.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/admin/DateTimeShortcuts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/admin/RelatedObjectLookups.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/calendar.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/core.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/inlines.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/inlines.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/inlines.min.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/inlines.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/urlify.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/urlify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/vendor/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/static/admin/js/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/data_mining_playground/static/admin/js/vendor/jquery/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_mining_playground/urls.py" afterPath="$PROJECT_DIR$/data_mining_playground/urls.py" />
-    </list>
+    <list default="true" id="f410a8a3-e174-4d3f-8e72-92e3d666b4ac" name="Default" comment="" />
     <ignored path="data_mining_playground.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
