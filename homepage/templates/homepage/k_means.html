@@ -1,0 +1,11 @@
+{% extends 'homepage/base.html' %}
+{% block content %}
+
+<h1>K Means Algorithm</h1>
+
+Step 1: Data Assignment. Each data point is assigned to its closest centroid, with ties
+broken arbitrarily. This results in a partitioning of the data.
+Step 2: Relocation of “means”. Each cluster representative is relocated to the center
+(mean) of all data points assigned to it. If the data points come with a probability measure
+(weights), then the relocation is to the expectations (weighted mean) of the data partitions.
+{% endblock %}
