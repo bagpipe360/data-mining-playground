@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f410a8a3-e174-4d3f-8e72-92e3d666b4ac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/templates/homepage/index.html" afterPath="$PROJECT_DIR$/homepage/templates/homepage/index.html" />
-    </list>
+    <list default="true" id="f410a8a3-e174-4d3f-8e72-92e3d666b4ac" name="Default" comment="" />
     <ignored path="data_mining_playground.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
