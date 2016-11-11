@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f410a8a3-e174-4d3f-8e72-92e3d666b4ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/templates/homepage/base.html" afterPath="$PROJECT_DIR$/homepage/templates/homepage/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/templates/homepage/index.html" afterPath="$PROJECT_DIR$/homepage/templates/homepage/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage/templates/homepage/k_means.html" afterPath="$PROJECT_DIR$/homepage/templates/homepage/k_means.html" />
     </list>
     <ignored path="data_mining_playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homepage/templates/homepage/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
@@ -89,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="680">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,10 +155,10 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/data_mining_playground/wsgi.py" />
         <option value="$PROJECT_DIR$/data_mining_playground/settings.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/homepage/templates/homepage/base.html" />
         <option value="$PROJECT_DIR$/homepage/templates/homepage/k_means.html" />
         <option value="$PROJECT_DIR$/homepage/templates/homepage/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -826,14 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homepage/templates/homepage/algorithm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -862,6 +849,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
