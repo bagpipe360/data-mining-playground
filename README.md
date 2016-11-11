@@ -6,6 +6,10 @@ This application supports the [Getting Started with Python on Heroku](https://de
 
 ## Running Locally
 
+RUN VIA PYTHON
+python manage.py runserver
+
+RUN VIA HEROKU
 Make sure you have Python [installed properly](http://install.python-guide.org).  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
 
 ```sh
