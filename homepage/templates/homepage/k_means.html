@@ -1,11 +1,31 @@
 {% extends 'homepage/index.html' %}
 {% block content %}
 
-<h1>K Means Algorithm</h1>
+<h1>k-means Algorithm</h1>
+<p>Steps</p>
+<ol>
+    <li> Pick k points. This decides how many clusters we will have.</li>
+    <li>For each data point, assign to the closest centroid.</li>
+    <li>Compute new centroids of newly formed clusters after having assigned all data points.</li>
+    <li>Do steps 2 and 3 again till convergence (centroids and points no longer migrate)</li>
+</ol>
+<h2>How to pick the right value of k?</h2>
+<p>Try different values of k and judge average distance to centroid from points as k increases.
+    Plot avergage distance to centroid as k increases.</p>
+<p>
+<div id="dvImportSegments" class="fileupload ">
+    <label for="txtFileUpload">Upload your CSV File</label>
+    <input type="file" name="File Upload" id="txtFileUpload" accept=".csv"/>
+    The first row of the CSV must be the titles of the columns. Restricted to two columns.
+</div>
+<div>
+    <label for="k-value">Enter k Value</label>
+    <input type="text" id="k-value"/>
+</div>
+<div>
+    <button type="button" id="submit-k-means">Graph k_means clustering</button>
+</div>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-Step 1: Data Assignment. Each data point is assigned to its closest centroid, with ties
-broken arbitrarily. This results in a partitioning of the data.
-Step 2: Relocation of “means”. Each cluster representative is relocated to the center
-(mean) of all data points assigned to it. If the data points come with a probability measure
-(weights), then the relocation is to the expectations (weighted mean) of the data partitions.
+
 {% endblock %}
