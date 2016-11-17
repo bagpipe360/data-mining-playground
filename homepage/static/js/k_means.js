@@ -44,7 +44,7 @@ $('#submit-k-means').click(function() {
      }
 
 
-function createKMeansChart(){
+function createKMeansChart(axis_names){
 
     var chart = Highcharts.chart('container', {
             chart: {
@@ -57,7 +57,7 @@ function createKMeansChart(){
             xAxis: {
                 title: {
                     enabled: true,
-                    text: 'x'
+                    text: axis_names.x
                 },
                 startOnTick: true,
                 endOnTick: true,
@@ -65,7 +65,7 @@ function createKMeansChart(){
             },
             yAxis: {
                 title: {
-                    text: 'y'
+                    text: axis_names.y
                 }
             },
             legend: {
@@ -98,7 +98,7 @@ function createKMeansChart(){
                     },
                     tooltip: {
                         headerFormat: '<b>{series.name}</b><br>',
-                        pointFormat: '{point.x} cm, {point.y} kg'
+                        pointFormat: '{point.x}, {point.y}'
                     }
                 }
             }
@@ -108,13 +108,18 @@ function createKMeansChart(){
 }
 
 function reloadKMeansChart(k_val, csv_data) {
+    var load_sample = false;
+    if (typeof csv_data === 'undefined') {
+        load_sample = true;
+    }
     $.ajax({
         url: '/k_means_graph_json',
-        data: {k: k_val, csv: JSON.stringify(csv_data)},
+        data: {k: k_val, load_sample: load_sample, csv: JSON.stringify(csv_data)},
         type: 'POST',
         success: function(series_data){
-            console.log(series_data);
-            var chart = createKMeansChart();
+            var centroids = [];
+            axis_names = {x: series_data.x, y: series_data.y};
+            var chart = createKMeansChart(axis_names);
             // Add clusters
             $.each(series_data.scatter_plots, function(label, scatter_points) {
                 chart.addSeries({
@@ -123,10 +128,22 @@ function reloadKMeansChart(k_val, csv_data) {
                 }, false);
             });
 
+             // Format centroids to have larger radius
+             $.each(series_data.centroids, function() {
+                var centroid = $(this);
+                centroids.push( {
+                    x: centroid[0],
+                    y: centroid[1],
+                    marker: {
+                        radius: 5
+                     }
+                })
+             });
             // Add centroids
             chart.addSeries({
                     name: "Centroids",
-                    data: series_data.centroids
+                    data: series_data.centroids,
+                    marker: {radius: 5}
                 }, false);
             chart.redraw();
         }
