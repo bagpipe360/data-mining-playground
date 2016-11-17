@@ -4,3 +4,4 @@ gunicorn==19.4.5
 whitenoise==3.2.2
 matplotlib==1.5.3
 sklearn==0.0
+scipy==0.18.1
