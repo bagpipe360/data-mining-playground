@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
+{% csrf_token %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,21 +13,25 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/data.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-<!-- Additional files for the Highslide popup effect -->
-<script src="https://www.highcharts.com/samples/static/highslide-full.min.js"></script>
-<script src="https://www.highcharts.com/samples/static/highslide.config.js" charset="utf-8"></script>
-<link rel="stylesheet" type="text/css" href="https://www.highcharts.com/samples/static/highslide.css" />
+    <!-- Additional files for the Highslide popup effect -->
+    <script src="https://www.highcharts.com/samples/static/highslide-full.min.js"></script>
+    <script src="https://www.highcharts.com/samples/static/highslide.config.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.highcharts.com/samples/static/highslide.css"/>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 
     <script src="{% static 'js/jquery.csv.js' %}"></script>
+    <script src="{% static 'js/csrftoken.js' %}"></script>
+    <script src="{% static 'js/svm.js' %}"></script>
 
     <script src="{% static 'js/k_means.js' %}"></script>
+    <script src="{% static 'js/cart.js' %}"></script>
+
 
 </head>
 <!-- Fixed navbar -->
@@ -49,9 +54,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Algorithm Playgrounds <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">C4.5</a></li>
+                        <li><a href="/cart">CART</a></li>
                         <li><a href="/k-means">k-means</a></li>
-                        <li><a href="#">Support Vector Machines</a></li>
+                        <li><a href="/svm">Support Vector Machines</a></li>
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">Additional algorithms</li>
                         <li><a href="#">Apriori</a></li>
@@ -60,7 +65,8 @@
                         <li><a href="#">AdaBoost</a></li>
                         <li><a href="#">kNN</a></li>
                         <li><a href="#">Naive Bayes</a></li>
-                        <li><a href="#">CART</a></li>
+
+                        <li><a href="#">C4.5</a></li>
                     </ul>
                 </li>
             </ul>

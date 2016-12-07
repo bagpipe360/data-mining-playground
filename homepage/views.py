@@ -1,5 +1,7 @@
 import json
 from homepage.k_means.k_means import *
+from homepage.cart.cart import  *
+from homepage.svm.svm import *
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 import os
@@ -17,8 +19,6 @@ def index(request):
 def k_means(request):
     return render(request, 'homepage/k_means.html', {})
 
-
-@csrf_exempt
 def k_means_graph_json(request):
     k = int(request.POST['k'])
     load_sample = request.POST['load_sample']
@@ -31,4 +31,19 @@ def k_means_graph_json(request):
 
     graphing_data = draw_k_means(k, csv_data)
 
+    return HttpResponse(json.dumps(graphing_data), content_type="application/json")
+
+
+def cart(request):
+    return render(request, 'homepage/cart.html', {})
+
+def cart_graph_json(request):
+    graphing_data = draw_cart()
+    return HttpResponse(json.dumps(graphing_data), content_type="application/json")
+
+def svm(request):
+    return render(request, 'homepage/svm.html', {})
+
+def svm_graph_json(request):
+    graphing_data = draw_cart()
     return HttpResponse(json.dumps(graphing_data), content_type="application/json")
